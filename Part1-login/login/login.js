@@ -17,7 +17,6 @@ const getCookieByName = name => {
 };
 
 const setCookie = (name, value, days) => {
-
     let cookie = name + "=" + encodeURIComponent(value) + "; max-age=" + days * 24 * 60 * 60 +  "; path=/";
     document.cookie = cookie;
 };
